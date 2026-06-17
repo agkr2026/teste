@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominando o ChatGPT - Mapa da IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="assets/mapa-ia-logo.png" alt="Mapa da IA" class="logo" onerror="this.outerHTML='<div class=\"logo-placeholder\">Mapa da IA</div>'">
+                <span class="logo-divider"></span>
+                <img src="assets/chatgpt-logo.png" alt="ChatGPT" class="logo" onerror="this.outerHTML='<div class=\"logo-placeholder\">ChatGPT</div>'">
+            </div>
+            <nav class="nav-menu">
+                <a href="#beneficios" class="nav-link">Benefícios</a>
+                <a href="#modulos" class="nav-link">Módulos</a>
+                <a href="#faq" class="nav-link">Para Quem É</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="particles"></div>
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <canvas id="canvas-lines"></canvas>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">DOMINE O CHATGPT E TRANSFORME SUA REALIDADE</h1>
+            <p class="hero-subtitle">Domine a inteligência artificial e se torne o mestre dos prompts, facilitando sua vida e transformando sua realidade em todos os aspectos.</p>
+            
+            <!-- VIDEO PLACEHOLDER -->
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="29" stroke="#00D9FF" stroke-width="2"/>
+                            <polygon points="22,15 22,45 45,30" fill="#00D9FF"/>
+                        </svg>
+                    </div>
+                    <p>Assista ao vídeo e descubra como dominar o ChatGPT pode mudar sua forma de trabalhar, criar e ganhar dinheiro.</p>
+                </div>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="scrollToAction()">QUERO RESERVAR MINHA VAGA</button>
+                <button class="btn btn-secondary" onclick="openWhatsapp()">QUERO CONVERSAR COM A EQUIPE PELO WHATSAPP</button>
+            </div>
+
+            <p class="security-text">✓ Comece mesmo que você ainda não entenda nada de inteligência artificial.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: O QUE É O CURSO -->
+    <section class="about-course">
+        <div class="container">
+            <h2 class="section-title">Isso não é apenas um curso sobre tecnologia.<br>É um treinamento para você assumir o controle da nova era.</h2>
+            
+            <div class="about-content">
+                <p>O Dominando o ChatGPT foi criado para pessoas comuns que querem parar de se sentir perdidas diante da inteligência artificial e começar a usar essa tecnologia como uma verdadeira aliada na vida, no trabalho, nos estudos, nos negócios e na criação de novas oportunidades.</p>
+                
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <h3>Você não precisa ser programador.</h3>
+                    </div>
+                    <div class="highlight">
+                        <h3>Você não precisa entender termos técnicos.</h3>
+                    </div>
+                    <div class="highlight">
+                        <h3>Você não precisa ser especialista em tecnologia.</h3>
+                    </div>
+                </div>
+
+                <p class="about-main-text">Você precisa apenas aprender a conversar com a inteligência artificial do jeito certo.</p>
+
+                <p>Quando você domina o ChatGPT, você deixa de usar a ferramenta como um curioso e começa a usar como alguém que sabe extrair respostas melhores, ideias melhores, estratégias melhores e resultados melhores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: ANTES E DEPOIS -->
+    <section class="before-after">
+        <div class="container">
+            <h2 class="section-title">Transformação Garantida</h2>
+            
+            <div class="before-after-grid">
+                <!-- ANTES -->
+                <div class="before-card card">
+                    <h3>Antes de dominar o ChatGPT</h3>
+                    <div class="card-icon before-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5C11.7 5 5 11.7 5 20s6.7 15 15 15 15-6.7 15-15S28.3 5 20 5zm0 27c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#FF1744"/>
+                            <path d="M19 13h2v9h-2z" fill="#FF1744"/>
+                            <path d="M19 24h2v2h-2z" fill="#FF1744"/>
+                        </svg>
+                    </div>
+                    <ul class="card-list">
+                        <li>Você faz perguntas soltas e recebe respostas genéricas.</li>
+                        <li>Perde tempo tentando explicar o que quer.</li>
+                        <li>Não sabe criar prompts realmente poderosos.</li>
+                        <li>Usa a IA só para curiosidade.</li>
+                        <li>Sente que está ficando para trás.</li>
+                    </ul>
+                </div>
+
+                <!-- DEPOIS -->
+                <div class="after-card card">
+                    <h3>Depois de dominar o ChatGPT</h3>
+                    <div class="card-icon after-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5C11.7 5 5 11.7 5 20s6.7 15 15 15 15-6.7 15-15S28.3 5 20 5zm0 27c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#00D9FF"/>
+                            <path d="M16.5 21l-3-3 1.4-1.4L16.5 18.2l5.6-5.6L23.5 14l-7 7z" fill="#00D9FF"/>
+                        </svg>
+                    </div>
+                    <ul class="card-list">
+                        <li>Você sabe criar comandos claros, estratégicos e eficientes.</li>
+                        <li>Usa a IA para produzir, planejar, vender, estudar e criar.</li>
+                        <li>Ganha velocidade nas tarefas do dia a dia.</li>
+                        <li>Transforma ideias em conteúdos, produtos e soluções.</li>
+                        <li>Começa a enxergar a IA como uma extensão da sua inteligência.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: BENEFÍCIOS -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <h2 class="section-title">O que você vai conseguir fazer depois do curso</h2>
+            
+            <div class="benefits-grid">
+                <!-- Benefício 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="24" stroke="url(#grad1)" stroke-width="2"/>
+                            <path d="M25 15v20M15 25h20" stroke="url(#grad1)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Criar prompts poderosos</h3>
+                    <p>Você vai aprender a estruturar comandos que fazem o ChatGPT entender exatamente o que você quer.</p>
+                </div>
+
+                <!-- Benefício 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M10 25L18 33L40 11" stroke="url(#grad2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06FFA5;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Ganhar produtividade</h3>
+                    <p>Use a IA para acelerar tarefas, organizar ideias, resumir textos, criar planejamentos e economizar horas de trabalho.</p>
+                </div>
+
+                <!-- Benefício 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="15" stroke="url(#grad3)" stroke-width="2"/>
+                            <circle cx="25" cy="25" r="8" stroke="url(#grad3)" stroke-width="2"/>
+                            <circle cx="25" cy="25" r="3" fill="url(#grad3)"/>
+                            <defs>
+                                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#06FFA5;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Criar conteúdos melhores</h3>
+                    <p>Transforme o ChatGPT em um parceiro para criar posts, roteiros, ideias, legendas, anúncios, aulas e materiais digitais.</p>
+                </div>
+
+                <!-- Benefício 4 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 10v30M10 25h30M18 18l14 14M32 18l-14 14" stroke="url(#grad4)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Melhorar sua tomada de decisão</h3>
+                    <p>Use a IA para analisar cenários, comparar possibilidades e enxergar caminhos que antes estavam invisíveis.</p>
+                </div>
+
+                <!-- Benefício 5 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <rect x="8" y="12" width="34" height="26" rx="2" stroke="url(#grad5)" stroke-width="2"/>
+                            <path d="M14 18h22M14 24h22M14 30h12" stroke="url(#grad5)" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06FFA5;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Aplicar IA na vida real</h3>
+                    <p>Nada de teoria vazia. O foco é usar o ChatGPT para resolver problemas práticos do dia a dia.</p>
+                </div>
+
+                <!-- Benefício 6 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 8L32 15L32 35C32 36.1 31.1 37 30 37H20C18.9 37 18 36.1 18 35V15L25 8Z" stroke="url(#grad6)" stroke-width="2" fill="none"/>
+                            <path d="M25 12v16M20 20h10" stroke="url(#grad6)" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#06FFA5;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Se preparar para o futuro</h3>
+                    <p>A inteligência artificial não é mais tendência. Ela já é uma nova habilidade essencial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: PARA QUEM É -->
+    <section class="for-who">
+        <div class="container">
+            <h2 class="section-title">Esse curso é para você se…</h2>
+            
+            <div class="for-who-grid">
+                <div class="for-who-item">
+                    <div class="checkmark">✓</div>
+                    <p>Você sente que precisa aprender inteligência artificial, mas não sabe por onde começar.</p>
+                </div>
+                <div class="for-who-item">
+                    <div class="checkmark">✓</div>
+                    <p>Você já usa o ChatGPT, mas sente que ainda usa muito abaixo do potencial.</p>
+                </div>
+                <div class="for-who-item">
+                    <div class="checkmark">✓</div>
+                    <p>Você quer ganhar tempo nas tarefas do dia a dia.</p>
+                </div>
+                <div class="for-who-item">
+                    <div class="checkmark">✓</div>
+                    <p>Você quer criar conteúdos, ideias, planejamentos e estratégias com mais velocidade.</p>
+                </div>
+                <div class="for-who-item">
+                    <div class="checkmark">✓</div>
+                    <p>Você quer se tornar mais produtivo, criativo e competitivo.</p>
+                </div>
+                <div class="for-who-item">
+                    <div class="checkmark">✓</div>
+                    <p>Você quer transformar conhecimento em resultado usando IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: PARA QUEM NÃO É -->
+    <section class="not-for-who">
+        <div class="container">
+            <h2 class="section-title">Esse curso não é para quem quer continuar apertando parafuso com a mão enquanto o mundo usa máquina.</h2>
+            
+            <div class="not-for-who-content">
+                <p>Se você acredita que inteligência artificial é só uma moda, talvez esse curso não seja para você.</p>
+                
+                <p class="highlight-text">Mas se existe dentro de você a sensação de que o mundo mudou, que as pessoas mais rápidas vão sair na frente e que dominar o ChatGPT pode abrir uma nova fase na sua vida, então essa página é para você.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: O QUE VOCÊ VAI APRENDER (MÓDULOS) -->
+    <section class="modules" id="modulos">
+        <div class="container">
+            <h2 class="section-title">O que você vai aprender</h2>
+            
+            <div class="modules-container">
+                <!-- Módulo 1 -->
+                <div class="module-card">
+                    <div class="module-number">01</div>
+                    <h3>Entendendo a nova era da inteligência artificial</h3>
+                    <p>Você vai entender por que o ChatGPT mudou o jogo e por que essa habilidade se tornou essencial.</p>
+                    <div class="module-line"></div>
+                </div>
+
+                <!-- Módulo 2 -->
+                <div class="module-card">
+                    <div class="module-number">02</div>
+                    <h3>Como conversar com o ChatGPT do jeito certo</h3>
+                    <p>Você vai aprender a sair dos comandos fracos e criar instruções claras, estratégicas e poderosas.</p>
+                    <div class="module-line"></div>
+                </div>
+
+                <!-- Módulo 3 -->
+                <div class="module-card">
+                    <div class="module-number">03</div>
+                    <h3>Prompts para produtividade, vida e trabalho</h3>
+                    <p>Você vai aplicar a IA em situações reais para ganhar tempo, clareza e velocidade.</p>
+                    <div class="module-line"></div>
+                </div>
+
+                <!-- Módulo 4 -->
+                <div class="module-card">
+                    <div class="module-number">04</div>
+                    <h3>Criação de conteúdos, ideias e estratégias</h3>
+                    <p>Você vai aprender a usar o ChatGPT para criar textos, roteiros, campanhas, aulas, produtos e soluções.</p>
+                    <div class="module-line"></div>
+                </div>
+
+                <!-- Módulo 5 -->
+                <div class="module-card">
+                    <div class="module-number">05</div>
+                    <h3>Dominando a mentalidade de quem usa IA</h3>
+                    <p>Você vai deixar de ser apenas um usuário curioso e começar a agir como alguém que comanda a ferramenta.</p>
+                    <div class="module-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: DOMÍNIO DO CHATGPT (VISUAL) -->
+    <section class="mastery-section">
+        <div class="container-full">
+            <h2 class="section-title">Sua Transformação em Dominar a IA</h2>
+            
+            <div class="mastery-grid">
+                <div class="mastery-item">
+                    <div class="mastery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="masteryGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0.3" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="150" cy="150" r="140" fill="url(#masteryGrad1)" stroke="#00D9FF" stroke-width="2"/>
+                            <circle cx="150" cy="150" r="100" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5"/>
+                            <circle cx="150" cy="150" r="60" fill="none" stroke="#06FFA5" stroke-width="2"/>
+                            <path d="M150 90L180 120L150 150L180 180L150 210" stroke="#00D9FF" stroke-width="2" fill="none"/>
+                            <circle cx="150" cy="150" r="20" fill="#00D9FF" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3>Controle Total</h3>
+                    <p>Você comanda a inteligência artificial com precisão cirúrgica.</p>
+                </div>
+
+                <div class="mastery-item">
+                    <div class="mastery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="masteryGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06FFA5;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0.3" />
+                                </linearGradient>
+                            </defs>
+                            <g>
+                                <path d="M80 200Q150 50 220 200" fill="url(#masteryGrad2)" stroke="#06FFA5" stroke-width="2"/>
+                                <circle cx="100" cy="150" r="8" fill="#00D9FF"/>
+                                <circle cx="150" cy="80" r="8" fill="#7C3AED"/>
+                                <circle cx="200" cy="150" r="8" fill="#06FFA5"/>
+                                <path d="M100 150L150 80M150 80L200 150" stroke="#00D9FF" stroke-width="1" stroke-dasharray="5,5"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Transformação Real</h3>
+                    <p>Seus resultados mudam radicalmente usando as mesmas ferramentas.</p>
+                </div>
+
+                <div class="mastery-item">
+                    <div class="mastery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="masteryGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#06FFA5;stop-opacity:0.3" />
+                                </linearGradient>
+                            </defs>
+                            <g>
+                                <rect x="80" y="100" width="140" height="100" fill="url(#masteryGrad3)" stroke="#7C3AED" stroke-width="2" rx="5"/>
+                                <line x1="95" y1="125" x2="205" y2="125" stroke="#00D9FF" stroke-width="1"/>
+                                <line x1="95" y1="145" x2="205" y2="145" stroke="#06FFA5" stroke-width="1"/>
+                                <line x1="95" y1="165" x2="160" y2="165" stroke="#00D9FF" stroke-width="1"/>
+                                <circle cx="260" cy="150" r="15" fill="#00D9FF"/>
+                                <text x="260" y="156" text-anchor="middle" fill="#0a0e27" font-size="20" font-weight="bold">✓</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Resultados Comprovados</h3>
+                    <p>Seus projetos, negócios e trabalho atingem novo patamar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: AUTORIDADE / POR QUE APRENDER AGORA -->
+    <section class="authority">
+        <div class="container">
+            <h2 class="section-title">Quem domina a IA agora sai na frente. Quem espera, corre atrás.</h2>
+            
+            <div class="authority-content">
+                <p>A diferença entre quem usa o ChatGPT de qualquer jeito e quem sabe dominar a ferramenta é brutal.</p>
+                
+                <div class="authority-comparison">
+                    <div class="comparison-item">
+                        <p class="comparison-label">Uma pessoa faz uma pergunta genérica</p>
+                        <p class="comparison-result">recebe uma resposta qualquer.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="comparison-item">
+                        <p class="comparison-label">A outra constrói comandos estratégicos</p>
+                        <p class="comparison-result">recebe ideias, planos, textos, análises, soluções e caminhos.</p>
+                    </div>
+                </div>
+
+                <p class="authority-conclusion">A ferramenta é a mesma.<br>O resultado muda porque o nível de comando é diferente.</p>
+
+                <p>O Dominando o ChatGPT foi criado para te colocar do lado das pessoas que sabem comandar a inteligência artificial, e não apenas brincar com ela.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: CTA FINAL -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title">Você pode continuar tentando descobrir sozinho…<br>ou pode aprender o caminho certo agora.</h2>
+            
+            <div class="final-cta-content">
+                <p>O ChatGPT já está mudando a forma como pessoas trabalham, estudam, vendem, criam e resolvem problemas.</p>
+                
+                <p class="final-cta-highlight">A pergunta não é mais se você vai usar inteligência artificial.<br>A pergunta é: você vai usar de forma rasa ou vai aprender a dominar de verdade?</p>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="openCheckout()">QUERO RESERVAR MINHA VAGA</button>
+                    <button class="btn btn-secondary" onclick="openWhatsapp()">QUERO CONVERSAR COM A EQUIPE PELO WHATSAPP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="assets/mapa-ia-logo.png" alt="Mapa da IA" class="footer-logo" onerror="this.outerHTML='<div class=\"footer-logo-placeholder\">Mapa da IA</div>'">
+                    <h3>Dominando o ChatGPT</h3>
+                </div>
+
+                <div class="footer-middle">
+                    <p class="footer-disclaimer">Este curso é uma iniciativa independente e educacional.</p>
+                </div>
+
+                <div class="footer-right">
+                    <a href="#" class="footer-link">Termos de Uso</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#" class="footer-link">Política de Privacidade</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#" class="footer-link">Suporte</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mapa da IA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
