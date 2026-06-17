@@ -1,0 +1,241 @@
+# ========================================
+# .gitignore - Dominando o ChatGPT
+# ========================================
+# Este arquivo especifica quais arquivos
+# NÃO devem ser enviados para o Git
+# ========================================
+
+# ========================================
+# VARIÁVEIS DE AMBIENTE
+# ========================================
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+secrets.json
+config.private.js
+
+# ========================================
+# DEPENDÊNCIAS
+# ========================================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========================================
+# BUILD E DISTRIBUIÇÃO
+# ========================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+*.min.js
+*.min.css
+*.min.html
+
+# ========================================
+# IDE E EDITOR
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# ========================================
+# SISTEMA OPERACIONAL
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ========================================
+# LOGS
+# ========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ========================================
+# ARQUIVOS TEMPORÁRIOS
+# ========================================
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# ========================================
+# TESTES
+# ========================================
+coverage/
+.coverage
+.nyc_output/
+*.lcov
+junit.xml
+
+# ========================================
+# DOCUMENTAÇÃO
+# ========================================
+docs/_build/
+site/
+
+# ========================================
+# BUNDLES
+# ========================================
+bundle.js
+bundle.min.js
+
+# ========================================
+# ARQUIVOS PESSOAIS/PRIVADOS
+# ========================================
+personal/
+private/
+archive/
+old/
+backup/
+
+# ========================================
+# DATABASE
+# ========================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# ========================================
+# ARQUIVOS DE CHAVE
+# ========================================
+*.pem
+*.key
+*.crt
+*.cert
+*.pfx
+*.p12
+
+# ========================================
+# ARQUIVOS COMPILADOS
+# ========================================
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ========================================
+# ARQUIVOS DO SISTEMA
+# ========================================
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace
+
+# ========================================
+# PASTA node_modules (redundante mas explícito)
+# ========================================
+node_modules/
+node_modules
+/node_modules
+
+# ========================================
+# ARQUIVOS DE LOCK (Geralmente gerados)
+# ========================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ========================================
+# CACHE
+# ========================================
+.cache/
+*.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+.jest-cache
+
+# ========================================
+# ARQUIVOS ESPECÍFICOS DO PROJETO
+# ========================================
+# Remova o # se não quiser rastrear esses:
+
+# videos/ (se armazenar vídeos localmente)
+# /assets/videos/
+
+# Screenshots/captures
+# screenshots/
+# captures/
+
+# Arquivos de teste pessoais
+# test-local/
+# debug/
+
+# Arquivos de configuração local
+# local-config.js
+# local-setup.md
+
+# ========================================
+# ARQUIVOS QUE DEVEM SER RASTREADOS
+# ========================================
+# Use ! para fazer exceções
+
+# Exemplo: rastrear mesmo com .min.js ignorado
+# !dist/app.min.js
+
+# Exemplo: rastrear node_modules específico
+# !node_modules/package-especial/
+
+# ========================================
+# COMENTÁRIOS ÚTEIS
+# ========================================
+
+# Padrões:
+# *           - Ignora todos os arquivos
+# *.log       - Ignora arquivos .log
+# /folder/    - Ignora pasta específica
+# !file.txt   - Exceção (rastreia este arquivo)
+# folder/*/   - Ignora tudo dentro de subpastas
+
+# ========================================
+# FIM DO .gitignore
+# ========================================
